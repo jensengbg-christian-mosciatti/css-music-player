@@ -1,7 +1,89 @@
-
 /** Låt denna kod vara kvar. Den kommer att ge en vit bakgrundsfärg
  till din musikspelare när du lägger till en audio-tag i HTML:en. **/
- 
+
 audio::-webkit-media-controls-panel {
-    background: #ffffff;
+  background: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Hind Vadodara", "open sans";
+  /* font-weight: 400; */
+}
+body {
+  height: 90vh;
+}
+.mainbox {
+  max-width: 500px;
+  height: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 50px auto;
+}
+
+header {
+  width: 100%;
+  height: 50%;
+  background-image: url("/images/background1.jpg");
+  background-size: cover;
+}
+
+.title {
+  margin-top: 30px;
+  font-weight: bold;
+}
+.artist {
+  margin-top: 15px;
+  color: #868686;
+  font-weight: 400;
+}
+
+.controls {
+  display: inline-block;
+  width: 100%;
+  /* font-family: "Open Sans";
+  font-size: 0.8rem; */
+  color: #868686;
+  margin-top: 50px;
+}
+
+.timeslider {
+  margin: 0 5px;
+  display: inline-block;
+  width: 40%;
+  height: 0;
+  border: 2px solid;
+  border-radius: 3px;
+}
+
+.play {
+  mask: url(../images/play.svg);
+  -webkit-mask: url(../images/play.svg);
+}
+
+.volume {
+  mask: url(../images/volume.svg);
+  -webkit-mask: url(../images/volume.svg);
+}
+
+.play,
+.volume {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #868686;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  margin: 0 5px;
+}
+
+.time,
+.play,
+.timeslider,
+.volume {
+  vertical-align: middle;
 }
