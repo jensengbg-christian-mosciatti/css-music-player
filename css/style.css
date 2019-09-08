@@ -87,3 +87,12 @@ header {
 .volume {
   vertical-align: middle;
 }
+
+.play:hover,
+.volume:hover {
+  background: #5a5a5a;
+}
+
+.timeslider:hover {
+  color: #5a5a5a;
+}
